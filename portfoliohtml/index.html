@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+        </ul>
+    </nav>
+    <div class="filter-container">
+        <label for="category-filter">Filtrer par catégorie :</label>
+        <select id="category-filter">
+            <option value="all">Toutes les catégories</option>
+            <option value="patrimoine">Gérer le patrimoine informatique</option>
+            <option value="assistance">Répondre aux incidents et aux demandes</option>
+            <option value="presence">Développer la présence en ligne</option>
+            <option value="projet">Travailler en mode projet</option>
+            <option value="service">Mettre à disposition un service</option>
+            <option value="pro">Organiser son développement professionnel</option>
+        </select>
+    </div>
+
+</header>
+
+<section class="container" id="about">
+    <h2>À Propos</h2>
+    <p>Bienvenue sur mon portfolio ! Je suis Killian Briche, un développeur passionné par la création d’applications, de sites web et de jeux. Actuellement en deuxième année de BTS SIO (Services Informatiques aux Organisations). Chaque projet sur lequel je travaille est une occasion d’apprendre.</p>
+</section>
+
+<section class="container" id="projects">
+    <h2>Stages</h2>
+    <div class="project">
+        <h3>Stage de première année</h3>
+        <ul class="weeks">
+            <li class="week patrimoine service">
+            <button class="week-btn" data-target="weeky11">Semaine 1</button>
+                <p class="week-content" id="weeky11">Mise en place d'un système de gestion des comptes dans un centre de ressources. Les tuteurs peuvent publier des fichiers accessibles en lecture seule par les élèves via un compte global. J’ai utilisé SQL pour gérer ces comptes.</p>
+            </li>
+            <li class="week assistance">
+            <button class="week-btn" data-target="weeky12">Semaine 2</button>
+                <p class="week-content" id="weeky12">Travail sur le centre de ressources pour assurer le partage sécurisé de documents entre tuteurs et étudiants. Problèmes rencontrés pour l'affectation des tuteurs à une formation spécifique.</p>
+            </li>
+            <li class="week patrimoine assistance projet pro">
+            <button class="week-btn" data-target="weeky13">Semaine 3</button>
+                <p class="week-content" id="weeky13">Tri et intégration de sites web sous Laragon pour l’entreprise Opale Auto Retro. Ajout d’une fonctionnalité d'affichage du nom des utilisateurs sur le cahier de texte. Restructuration et automatisation du Trello. Tentative de résolution d’un problème d’affectation de formation.</p>
+            </li>
+            <li class="week patrimoine projet service">
+            <button class="week-btn" data-target="weeky14">Semaine 4</button>
+                <p class="week-content" id="weeky14">Finalisation de la page récapitulative du cahier de texte et mise en place d'un système de gestion des fichiers avec options de téléchargement, suppression et prévisualisation.</p>
+
+            <li class="week images">
+            <button class="week-btn" data-target="weeky1-images">Images</button>
+                <div class="week-content" id="weeky1-images">
+                    <h1>Page de Récapitulatif des saisies  :</h1>
+                    <img class="weekimages" src="assets/y1w1d1.png" alt="Illustration semaine 1 année 1">
+                    <h1>Page de Centre des ressources  :</h1>
+                    <img class="weekimages" src="assets/y1w1d2.png" alt="Illustration semaine 1 année 1">
+                    <p>-----------------------TRELLO--------------------------</p>
+                    <img class="weekimages" src="assets/trelloarepbook.png" alt="Illustration bowlng">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3>Stage de deuxième année</h3>
+        <ul class="weeks">
+            <li class="week presence">
+            <button class="week-btn" data-target="week1">Semaine 1</button>
+                <p class="week-content" id="week1">Développement d’un site principal avec plusieurs pages et boutons fonctionnels. Création d’un site photo avec un slider en JavaScript et un menu déroulant dynamique en PHP permettant d’afficher les images selon leur catégorie.</p>
+            </li>
+            <li class="week presence">
+            <button class="week-btn" data-target="week2">Semaine 2</button>
+                <p class="week-content" id="week2">Finalisation du site photo avec une section "Photo du jour". Développement du site de l’atelier informatique détaillant ses services et intégrant plusieurs pages explicatives avec design soigné en CSS.</p>
+            </li>
+            <li class="week presence">
+            <button class="week-btn" data-target="week3">Semaine 3</button>
+                <p class="week-content" id="week3">Finalisation du site de l’atelier informatique. Début du développement d’un site répertoriant les archives historiques d’Ambleteuse, avec 18 catégories différentes et une navigation optimisée via un breadcrumb et un header/footer.</p>
+            </li>
+            <li class="week patrimoine presence pro">
+            <button class="week-btn" data-target="week4">Semaine 4</button>
+                <p class="week-content" id="week4">Finalisation du site d’archives et développement d’un système de gestion dynamique des dossiers et des pages PHP associées. Mise en place d’un système de connexion sécurisé avec hashage de mot de passe et protection contre le brute force.</p>
+            </li>
+            <li class="week patrimoine service pro">
+            <button class="week-btn" data-target="week5">Semaine 5</button>
+                <p class="week-content" id="week5">Ajout d’un système de création et suppression de dossiers ainsi que l’upload d’images sous protection d’une connexion sécurisée.</p>
+            </li>
+            <li class="week projet">
+            <li><button class="week-btn" data-target="week6">Semaine 6</button>
+                <p class="week-content" id="week6">Durant cette dernière semaine de stage, j’ai apporté plusieurs améliorations au site. J’ai modifié l’interface en déplaçant le header sur le côté gauche et en intégrant un bouton menu permettant de l’ouvrir et de le fermer pour une meilleure navigation. J’ai également effectué quelques retouches visuelles et optimisations afin d’améliorer l’expérience utilisateur et les performances du site. Enfin, j’ai mis en ligne l’ensemble des sites développés, avec la page principale accessible sous le nom de domaine ambleteuse.net.</p>
+            </li>
+            <li class="week images">
+            <button class="week-btn" data-target="weeky2-images">Images</button>
+                <div class="week-content" id="weeky2-images">
+                    <h1>Site regroupant les autres sites</h1>
+                    <img class="weekimages" src="assets/y2w1d1.png" alt="Illustration semaine 1 année 1">
+                    <h1>Site informatique :</h1>
+                    <img class="weekimages" src="assets/y2w1d2.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d3.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d4.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d5.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d6.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d7.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d8.png" alt="Illustration semaine 1 année 1">
+                    <h1>Site photo :</h1>
+                    <img class="weekimages" src="assets/y2w1d9.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d10.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d11.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d12.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d13.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d14.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d15.png" alt="Illustration semaine 1 année 1">
+                    <h1>Site Histoire d'ambleteuse :</h1>
+                    <img class="weekimages" src="assets/y2w1d16.png" alt="Illustration semaine 1 année 1">
+                    <img class="weekimages" src="assets/y2w1d17.png" alt="Illustration semaine 1 année 1">
+                </div>
+            </li>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3>AP</h3>
+        <ul class="weeks">
+            <li class="week presence ">
+                <button class="week-btn" data-target="embarcadère">Embarcadère</button>
+                <div class="week-content" id="embarcadère">
+
+                    <img class="weekimages" src="assets/ap1ebc.png" alt="Illustration embarcadere">
+                </div>
+        </li>
+            <ul class="weeks">
+                <li class="week presence">
+                    <button class="week-btn" data-target="Opaleauto">Opale Auto Retro</button>
+                    <div class="week-content" id="Opaleauto">
+
+                        <img class="weekimages" src="assets/mainmenuoar.png" alt="Illustration oar">
+                        <img class="weekimages" src="assets/showcaseoar.png" alt="Illustration oar">
+                        <img class="weekimages" src="assets/showcasetwooar.png" alt="Illustration oar">
+                    </div>
+                </li>
+                <ul class="weeks">
+                    <li class="week presence projet">
+                        <button class="week-btn" data-target="innovgame">InnovGames</button>
+                        <div class="week-content" id="innovgame">
+                            <p>InnovGame était le premier travail de groupe chacun avais sa partie ma partie était de codé le jeu<div></div>Le jeu devait être un jeu où les combats se déroulent sous forme de quiz : il fallait répondre correctement pour gagner le combat.<div></div><br>Ceci est le joueur, le personnage que nous incarnons en vue Première personne (donc vue du personnage) et qu'on déplace via les touches ZQSD la caméra se déplace avec le pad ou la souris et le saut est sur la touche espace</p>
+                            <img class="weekimages" src="assets/Player.png" alt="Illustration oar">
+                            <p>(Vue du personnage)</p>
+                            <img class="weekimages" src="assets/fpsview.png" alt="Illustration oar">
+                            <p>Les monstres du jeu, quand ils repérent le joueur le monstre va donc suivre le joueur jusqu'au contact les toucher dois lancer un quizz a 4 réponses aléatoirement choisi</p>
+                            <img class="weekimages" src="assets/Ennemyone.png" alt="Illustration oar">
+                            <img class="weekimages" src="assets/Ennemytwo.png" alt="Illustration oar">
+                            <p>Dans le jeu que j'ai fait, il fallait se déplacer dans des labyrinthe avec des monstres comme vu si dessus, le jeu possède 3 niveau différent qui dont accèssible après avoir trouver et interagis avec les teleporteurs comme affiché si dessous </p>
+                            <img class="weekimages" src="assets/tponeone.png" alt="Illustration oar">
+                            <img class="weekimages" src="assets/tponetwo.png" alt="Illustration oar">
+                            <img class="weekimages" src="assets/tptwothree.png" alt="Illustration oar">
+                            <img class="weekimages" src="assets/tpthreethree.png" alt="Illustration oar">
+                            <p>il fallait sortir du labyrinthe pour gagné la partie, la sortie était représenter de cette façon</p>
+                            <img class="weekimages" src="assets/exit.png" alt="Illustration oar">
+                            <p>Nous avions un groupe pour communiquer et donc faire un travail en projet</p>
+                            <img class="weekimages" src="assets/discordinnovgames.png" alt="Illustration oar">
+                        </div>
+                    </li>
+            <li class="week assistance projet service ">
+                <button class="week-btn" data-target="Applilourde">FFBSQ</button>
+                <div class="week-content" id="Applilourde">
+                    <p>---------------------Application lourde--------------------------</p>
+                    <p>Diagramme de classes de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/applourde.drawio.png" alt="Illustration bowling">
+                    <p>Menu principal de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowl1.png" alt="Illustration bowling">
+                    <p>Menu gestion des joueurs de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowl2.png" alt="Illustration bowlng">
+                    <p>Menu création des joueurs de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowljesaisplus.png" alt="Illustration bowlng">
+                    <p>Menu gestion d'une équipe de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowl4.png" alt="Illustration bowlng">
+                    <p>Menu création d'une équipe de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowl3.png" alt="Illustration bowlng">
+                    <p>Menu gestion des concours de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowl5.png" alt="Illustration bowlng">
+                    <p>Menu gestion des inscription de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowl6.png" alt="Illustration bowlng">
+                    <p>Menu de saisies de match de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowlmatchsaisie.png" alt="Illustration bowlng">
+                    <p>Menu des matchs en cours de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowlmatchencours.png" alt="Illustration bowlng">
+                    <p>details d'un match de l'application FFBSQ:</p>
+                    <img class="weekimages" src="assets/bowlmatchdetails.png" alt="Illustration bowlng">
+                    <p>-----------------------Application WEB--------------------------</p>
+                    <p>Page de login de l'application web FFBSQ:</p>
+                    <img class="weekimages" src="assets/login.png" alt="Illustration bowlng">
+                    <p>Page de creation de compétition de l'application web FFBSQ:</p>
+                    <img class="weekimages" src="assets/capture%20d'écran%20site.png" alt="Illustration bowlng">
+                    <p>Page de modification de compétition de l'application web FFBSQ:</p>
+                    <img class="weekimages" src="assets/edit.png" alt="Illustration bowlng">
+                    <p>Page de gestion de compétition de l'application web FFBSQ:</p>
+                    <img class="weekimages" src="assets/gestion.png" alt="Illustration bowlng">
+                    <p>Page d'ajout de résultat de l'application web FFBSQ:</p>
+                    <img class="weekimages" src="assets/ajouter.png" alt="Illustration bowlng">
+                    <p>Page de classement des équipes de l'application web FFBSQ:</p>
+                    <img class="weekimages" src="assets/leaderboard.png" alt="Illustration bowlng">
+                    <p>-----------------------TRELLO--------------------------</p>
+                    <img class="weekimages" src="assets/trelloffsq.png" alt="Illustration bowlng">
+                </div>
+            </li>
+            </ul>
+        </ul>
+    </div>
+</section>
+
+
+
+<footer>
+    <p>&copy; 2025 BRICHE Killian</p>
+</footer>
+</body>
+</html>
